@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple — простые вещи из бумаги</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="header__inner container">
+      <button class="header__burger icon-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5h16M2 10h16M2 15h16"/></svg>
+      </button>
+
+      <a class="logo header__logo" href="#" aria-label="Simple — на главную">
+        <span class="logo__dot"></span>simple<span class="logo__pill"></span><span class="logo__dot"></span>
+      </a>
+
+      <nav class="nav header__nav" id="main-nav" aria-label="Основное меню">
+        <button class="nav__close icon-button" type="button" aria-label="Закрыть меню">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 2l10 10M12 2L2 12"/></svg>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#products">Продукция</a></li>
+          <li class="nav__item"><a class="nav__link" href="#partners">Материалы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#advantages">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="#footer">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-button" type="button" aria-label="Поиск">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="5.5"/><path d="M12 12l4.5 4.5"/></svg>
+        </button>
+        <button class="icon-button" type="button" aria-label="Войти">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 3h8v12H7M2 9h9M8 6l3 3-3 3"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <h1 class="hero__title">Простые вещи.<br>Из бумаги</h1>
+          <p class="hero__text">Бумага (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками.</p>
+          <a class="button hero__button" href="#products">Каталог</a>
+        </div>
+        <img class="hero__image" src="images/hero.png" width="401" height="992" alt="Бумажный рулон в картонном тубусе">
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages" id="advantages">
+      <div class="advantages__inner container">
+        <ul class="features advantages__features">
+          <li class="features__item">
+            <img class="features__image" src="images/feature-1.png" width="480" height="333" alt="">
+            <div class="features__body">
+              <p class="features__version">V.1</p>
+              <p class="features__text">Результат вашего обучения</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <img class="features__image" src="images/feature-2.png" width="480" height="301" alt="">
+            <div class="features__body">
+              <p class="features__version">V.2</p>
+              <p class="features__text">Результат вашего обучения</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <img class="features__image" src="images/feature-3.png" width="480" height="386" alt="">
+            <div class="features__body">
+              <p class="features__version">V.3</p>
+              <p class="features__text">Результат вашего обучения</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="whiteness advantages__whiteness">
+          <img class="whiteness__image" src="images/whiteness.png" width="1000" height="761" alt="Развёртка бумажной упаковки">
+          <div class="whiteness__content">
+            <h2 class="whiteness__title">Максимальная белизна</h2>
+            <p class="whiteness__text">Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные вещества: мел, тальк, каолин и др. Эта операция называется наполнением.</p>
+            <p class="whiteness__text">Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой является непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Продукция -->
+    <section class="products" id="products">
+      <div class="products__inner container">
+        <ul class="products__list">
+          <li class="card products__item">
+            <img class="card__image" src="images/product-1.png" width="800" height="600" alt="Упаковка">
+            <h3 class="card__title">Упаковка</h3>
+            <p class="card__meta">Тираж: от 50 штук</p>
+            <p class="card__text">Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.</p>
+            <a class="link card__link" href="#">Подробнее</a>
+          </li>
+          <li class="card products__item">
+            <img class="card__image" src="images/product-2.png" width="800" height="600" alt="Пакеты">
+            <h3 class="card__title">Пакеты</h3>
+            <p class="card__meta">Тираж: от 200 штук</p>
+            <p class="card__text">С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.</p>
+            <a class="link card__link" href="#">Подробнее</a>
+          </li>
+          <li class="card products__item">
+            <img class="card__image" src="images/product-3.png" width="800" height="600" alt="Кейсы">
+            <h3 class="card__title">Кейсы</h3>
+            <p class="card__meta">Тираж: от 50 штук</p>
+            <p class="card__text">Подойдут для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.</p>
+            <a class="link card__link" href="#">Подробнее</a>
+          </li>
+          <li class="card products__item">
+            <img class="card__image" src="images/product-4.png" width="800" height="600" alt="Другие изделия">
+            <h3 class="card__title">Другие изделия</h3>
+            <p class="card__meta">Тираж: от 100 штук</p>
+            <p class="card__text">Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.</p>
+            <a class="link card__link" href="#">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Партнёры -->
+    <section class="partners" id="partners">
+      <div class="partners__inner container">
+        <ul class="partners__list">
+          <li class="partners__item"><img class="partners__logo" src="images/hahnemuhle.png" width="140" height="50" alt="Hahnemühle"></li>
+          <li class="partners__item"><img class="partners__logo" src="images/canson.png" width="140" height="50" alt="Canson"></li>
+          <li class="partners__item"><img class="partners__logo" src="images/royal talens.png" width="140" height="50" alt="Royal Talens"></li>
+          <li class="partners__item"><img class="partners__logo" src="images/fabriano.png" width="140" height="50" alt="Fabriano"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Скетчбук -->
+    <section class="sketchbook">
+      <div class="sketchbook__inner container">
+        <div class="sketchbook__content">
+          <h2 class="sketchbook__title">Simple скетчбук</h2>
+          <p class="sketchbook__text">80 листов, твёрдая обложка, бумага Fabriano 200 г/м². Подойдёт и для графики и для акварели. Для самых смелых творческих замыслов!</p>
+          <a class="button sketchbook__button" href="#">Купить</a>
+        </div>
+        <img class="sketchbook__image" src="images/sketchbook.png" width="1000" height="718" alt="Скетчбук Simple с рисунком">
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner container">
+      <a class="logo logo_theme_light footer__logo" href="#" aria-label="Simple — на главную">
+        <span class="logo__dot"></span>simple<span class="logo__pill"></span><span class="logo__dot"></span>
+      </a>
+      <ul class="socials footer__socials">
+        <li class="socials__item"><a class="socials__link" href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M1 0h12a1 1 0 011 1v12a1 1 0 01-1 1H9.3V8.7h1.6l.3-1.9H9.3V5.6c0-.6.3-1 1-1h1V3c-.2 0-.8-.1-1.5-.1-1.5 0-2.5.9-2.5 2.6v1.3H5.7v1.9h1.6V14H1a1 1 0 01-1-1V1a1 1 0 011-1z"/></svg></a></li>
+        <li class="socials__item"><a class="socials__link" href="#" aria-label="Twitter"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M14 2.7c-.5.2-1 .4-1.6.5.6-.3 1-.9 1.2-1.5-.5.3-1.1.5-1.8.7a2.8 2.8 0 00-4.8 2.6C4.700 4.900 2.600 3.800 1.200 2.100a2.800 2.800 0 00.9 3.800c-.5 0-.9-.1-1.300-.4 0 1.400 1 2.500 2.200 2.800-.4.100-.8.100-1.200 0 .3 1.100 1.400 1.900 2.600 1.900A5.600 5.600 0 010 11.400 8 8 0 004.300 12.700c5.200 0 8.100-4.400 8-8.300.6-.4 1.100-.9 1.700-1.700z"/></svg></a></li>
+        <li class="socials__item"><a class="socials__link" href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1" y="1" width="12" height="12" rx="3"/><circle cx="7" cy="7" r="2.700"/><circle cx="10.500" cy="3.500" r=".5" fill="currentColor"/></svg></a></li>
+        <li class="socials__item"><a class="socials__link" href="#" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M1 1h12a1 1 0 011 1v10a1 1 0 01-1 1H1a1 1 0 01-1-1V2a1 1 0 011-1zm4.500 3v6L10 7z" fill-rule="evenodd"/></svg></a></li>
+      </ul>
+    </div>
+    <p class="footer__copyright">SIMPLE — 2021</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
